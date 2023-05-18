@@ -41,5 +41,5 @@ if (token === null) {
 
 function logout() {
     localStorage.clear();
-    window.location.replace('/login.html')
+    window.location.replace('./login.html')
 }

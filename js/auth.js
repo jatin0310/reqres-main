@@ -29,7 +29,7 @@ function login() {
             .then((result) => {
                 console.log('result', result);
                 localStorage.setItem('token', result.token);
-                window.location.replace("/dashboard.html")
+                window.location.replace("./dashboard.html")
             })
             .catch((error) => console.log('err', error));
     });
@@ -64,7 +64,7 @@ function signup() {
         }).then((response) => response.json())
             .then((result) => {
                 console.log('signup', result);
-                window.location.replace("/login.html")
+                window.location.replace("./login.html")
             })
             .catch((error) => console.log('err', error));
     });
